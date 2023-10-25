@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bmiCalculator.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="bmiCalc">
+        <div class="weight">
+          <label for="text">Wieght: </label>
+          <input type="number" class="wt" placeholder="Your Weight in kgs" />
+        </div>
+        <div class="height">
+          <label for="text">Feet ' : </label>
+          <input type="number" class="feet" placeholder="Feet" />
+          <label for="text">Inches " :</label>
+          <input type="number" class="inchs" placeholder="Inches" />
+        </div>
+        <div class="buttons">
+          <button type="submit" onclick="calcBmi()">Calculate</button>
+          <button type="reset" onclick="reset()">Reset</button>
+        </div>
+        <p>Your BMI is :</p>
+        <h3>0</h3>
+        <div class="status"></div>
+      </div>
+
+      <section class="bmi-scale">
+        <div style="color: orange">
+          <h4>Underwieght</h4>
+          <p>&lt; 18.4</p>
+        </div>
+        <div style="color: green">
+          <h4>Normal</h4>
+          <p>18.5 - 24.9</p>
+        </div>
+        <div style="color: lightcoral">
+          <h4>Overerwieght</h4>
+          <p>25 - 39.9</p>
+        </div>
+        <div style="color: crimson">
+          <h4>Obese</h4>
+          <p>>_ 40.0</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="./bmiCalculator.js"></script>
+  </body>
+</html>
